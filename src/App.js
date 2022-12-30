@@ -60,13 +60,13 @@ function App() {
   }
 
   return (
-    <div>
-      <div>
-        <span>{state.h < 0 ? "0" + state.h : state.h}</span>
-        <span>:{state.m < 0 ? "0" + state.m : state.m}</span>
-        <span>:{state.s < 0 ? "0" + state.s : state.s}</span>
+    <div >
+      <div style={{display:"flex", alignItems: "center",justifyContent: "center", margin: "50px"}}>
+        <span>{state.h  ? "0" + state.h : state.h}</span>
+        <span>:{state.m  ? "0" + state.m : state.m}</span>
+        <span>:{state.s ? "0" + state.s : state.s}</span>
       </div>
-      <div>
+      <div style={{display:"flex", alignItems: "center",justifyContent: "center"}}>
         <button onClick={() => Stop()}>Stop</button>
         <button onClick={() => Reset()}>Reset</button>
         <button onClick={() => Start()}>Start</button>
